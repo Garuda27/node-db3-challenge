@@ -1,3 +1,13 @@
+db = require('../data/dbConfig.js')
+
+module.exports = {
+    find,
+    findById,
+    add,
+    update,
+    remove
+}
+
 function find() {
     return db('schemes');
 }
